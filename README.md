@@ -65,3 +65,11 @@ APIs
         "email_id": "example1@example.com",
         "first_name": "vikash1",
     }`
+
+
+APIs TEST CASES
+--------------
++  /book/tests.py
+
+Test cases are running with docker while initialization of image.
+Verify in Dockerfile (python manage.py test)

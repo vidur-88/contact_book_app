@@ -25,7 +25,7 @@ class Create(APIView):
             msg = create_contact(request.body)
             return Response(msg, content_type='application/json')
         except Exception as e:
-            return Response(e.args, content_type='application/json')
+            return Response(status=500, content_type='application/json')
 
 
 class Delete(APIView):
@@ -36,7 +36,7 @@ class Delete(APIView):
             msg = delete_contact(request.body)
             return Response(msg, content_type='application/json')
         except Exception as e:
-            return Response(e.args, content_type='application/json')
+            return Response(status=500, content_type='application/json')
 
 
 class Edit(APIView):
@@ -47,4 +47,4 @@ class Edit(APIView):
             msg = edit_contact(request.body)
             return Response(msg, content_type='application/json')
         except Exception as e:
-            return Response(e.args, content_type='application/json')
+            return Response(status=500, content_type='application/json')
