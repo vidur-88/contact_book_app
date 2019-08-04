@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    restart: always
+    image: book-app
+    container_name: book-app
+    hostname: book-app
+    build: .
+    command: >
+      bash -c "set -e
+      && gunicorn contact_book_app.wsgi -b 0.0.0.0:8000
+      && /bin/bash"
+    ports:
+      - 8000:8000
