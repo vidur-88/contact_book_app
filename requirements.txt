@@ -1,0 +1,5 @@
+Django==2.2
+djangorestframework==3.10.2
+elasticsearch==7.0.2
+elasticsearch-dsl==7.0.0
+requests==2.22.0
