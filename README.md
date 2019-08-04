@@ -25,9 +25,13 @@ APIs
 
 +  /book/contact (GET)
 
+    `headers: {
+        "Authorization": "Token 913681b2f6d5cd5b4726e7871b58a67c472ff445",
+        "Content-Type": "application/json"
+    }`
+    
     `params: {
         "email_id": "exampl1e@example.com",
-        "Authorization": "Token 913681b2f6d5cd5b4726e7871b58a67c472ff445"
     }`
 
 +  /book/contact/create (POST)
@@ -61,6 +65,7 @@ APIs
         "Authorization": "Token 913681b2f6d5cd5b4726e7871b58a67c472ff445",
         "Content-Type": "application/json"
     }`
+    
     `params: {
         "email_id": "example1@example.com",
         "first_name": "vikash1",
