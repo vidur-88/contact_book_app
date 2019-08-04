@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: >
+    bash -c "set -e
+      && gunicorn contact_book_app.wsgi -b 0.0.0.0:8000
+      && /bin/bash"
