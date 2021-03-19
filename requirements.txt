@@ -1,5 +1,5 @@
 Django==2.2.13
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 django-extensions==2.2.1
 gunicorn==19.9.0
 requests==2.22.0
